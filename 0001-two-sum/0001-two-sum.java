@@ -7,9 +7,9 @@ class Solution {
             map.put(nums[i], i);
         }
         for (int i = 0; i < n; i++){
-            int find = target - nums[i];
-            if (map.get(find) != null && map.get(find) != i){
-                return new int[] {i, map.get(find)};
+            Integer temp = map.get(target - nums[i]);
+            if (temp != null && temp != i){
+                return new int[] {i, temp};
             }
         }
         return new int[]{0,1};
