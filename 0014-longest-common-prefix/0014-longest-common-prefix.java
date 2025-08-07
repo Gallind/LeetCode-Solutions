@@ -4,7 +4,7 @@ class Solution {
         String currStr = strs[0];
         int currLen = currStr.length();
         for (String str : strs){
-            if (str.length() > currLen){
+            if (str.length() < currLen){
                 currLen = str.length();
                 currStr = str;
             }
