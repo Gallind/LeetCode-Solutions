@@ -5,9 +5,5 @@ class Solution {
         BigInteger bBig = new BigInteger(b,2);
         aBig = aBig.add(bBig);
         return aBig.toString(2);
-        // long aVal = Long.parseLong(a,2), bVal = Long.parseLong(b,2);
-        // long val = aVal + bVal;
-        // String sol = Long.toBinaryString(val);
-        // return sol;
     }
 }
