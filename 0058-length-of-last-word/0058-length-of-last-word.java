@@ -1,14 +1,22 @@
 class Solution {
     public int lengthOfLastWord(String s) {
-        int last = 0, count = 0;
-        if (s == "") return 0;
-        for (char ch : s.toCharArray()){
-            if (ch != ' '){
-                count++;
-                last = count;
-            }
-            else count = 0;
+        int count = 0;
+        boolean stillSpace = true;
+        for (int i = s.length() - 1; i >= 0; i--){
+            if (stillSpace && s.charAt(i) == ' ') continue;
+            stillSpace = false;
+            if (s.charAt(i) == ' ') return count;
+            count++;
         }
-        return last;
+        return count;
+        // if (s == "") return 0;
+        // for (char ch : s.toCharArray()){
+        //     if (ch != ' '){
+        //         count++;
+        //         last = count;
+        //     }
+        //     else count = 0;
+        // }
+        // return last;
     }
 }
