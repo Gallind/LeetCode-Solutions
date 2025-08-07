@@ -10,12 +10,9 @@ class Solution {
             }
             else carry = 0;
         }
-        if (digits[0] == 0){
+        if (carry == 1){
             int[] sol = new int[len + 1];
             sol[0] = 1;
-            for (int i = 1; i <= len; i++){
-                sol[i] = 0;
-            }
             return sol;
         }
         return digits;
