@@ -3,12 +3,12 @@ class Solution {
         if (strs.length == 0) return "";
         String currStr = strs[0];
         int currLen = currStr.length();
-        for (String str : strs){
-            if (str.length() < currLen){
-                currLen = str.length();
-                currStr = str;
-            }
-        }
+        // for (String str : strs){
+        //     if (str.length() < currLen){
+        //         currLen = str.length();
+        //         currStr = str;
+        //     }
+        // }
         for (String str : strs) {
             while (currLen > str.length() || !currStr.equals(str.substring(0, currLen))) {
                 currLen--;
