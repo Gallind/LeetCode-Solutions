@@ -9,14 +9,5 @@ class Solution {
             count++;
         }
         return count;
-        // if (s == "") return 0;
-        // for (char ch : s.toCharArray()){
-        //     if (ch != ' '){
-        //         count++;
-        //         last = count;
-        //     }
-        //     else count = 0;
-        // }
-        // return last;
     }
 }
