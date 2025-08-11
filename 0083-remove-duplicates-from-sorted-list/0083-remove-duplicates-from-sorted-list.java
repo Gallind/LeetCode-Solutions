@@ -21,13 +21,6 @@ class Solution {
             else{
                 headTemp.next = headTemp.next.next;
             }
-            // else if (headTemp.next.next != null){
-            //     headTemp.next = headTemp.next.next;
-            //     headTemp = headTemp.next;
-            // }
-            // else{
-            //     headTemp.next = null;
-            // }
         }
         return head;
     }
