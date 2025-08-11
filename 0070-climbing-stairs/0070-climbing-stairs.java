@@ -1,7 +1,7 @@
 class Solution {
     
     public int climbStairs(int n) {
-        int[] mem = new int[50];
+        int[] mem = new int[46];
         mem[0] = 0; 
         mem[1] = 1;
         mem[2] = 2;
