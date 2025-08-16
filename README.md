@@ -61,6 +61,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0070-climbing-stairs](https://github.com/Gallind/LeetCode-Solutions/tree/master/0070-climbing-stairs) |
 | [0231-power-of-two](https://github.com/Gallind/LeetCode-Solutions/tree/master/0231-power-of-two) |
 | [0268-missing-number](https://github.com/Gallind/LeetCode-Solutions/tree/master/0268-missing-number) |
+| [0326-power-of-three](https://github.com/Gallind/LeetCode-Solutions/tree/master/0326-power-of-three) |
 ## Binary Search
 |  |
 | ------- |
@@ -112,6 +113,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0021-merge-two-sorted-lists](https://github.com/Gallind/LeetCode-Solutions/tree/master/0021-merge-two-sorted-lists) |
 | [0231-power-of-two](https://github.com/Gallind/LeetCode-Solutions/tree/master/0231-power-of-two) |
+| [0326-power-of-three](https://github.com/Gallind/LeetCode-Solutions/tree/master/0326-power-of-three) |
 ## String Matching
 |  |
 | ------- |
