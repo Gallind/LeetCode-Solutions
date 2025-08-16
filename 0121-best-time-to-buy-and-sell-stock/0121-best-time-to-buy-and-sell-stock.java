@@ -3,11 +3,10 @@ class Solution {
         int maxP = 0;
         int min = prices[0];
         for (int i = 0; i < prices.length; i++){
-            int temp = prices[i];
-            if (temp < min){
-                min = temp;
+            if (prices[i] < min){
+                min = prices[i];
             }
-            else if (temp - min > maxP) maxP = temp - min;
+            else if (prices[i] - min > maxP) maxP = prices[i] - min;
         }
         return maxP;
     }
