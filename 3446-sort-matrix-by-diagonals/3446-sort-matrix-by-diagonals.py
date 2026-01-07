@@ -2,7 +2,7 @@ class Solution:
     def sortMatrix(self, grid: List[List[int]]) -> List[List[int]]:
         n = len(grid)
         r_edge = n - 1
-        amount_diag = n + r_edge
+        amount_diag = n * 2 - 1
         diagonals = []
         upper_diagonals = []
  
