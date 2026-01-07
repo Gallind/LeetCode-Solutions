@@ -3,11 +3,11 @@ class Solution:
         l1 = len(word1)
         l2 = len(word2)
 
-        sol3 = ""
-        for c1, c2 in zip(word1, word2):
-            sol3 += c1 + c2
-        sol3 += word1[l2:] + word2[l1:]
-        return sol3
+        # sol3 = ""
+        # for c1, c2 in zip(word1, word2):
+        #     sol3 += c1 + c2
+        # sol3 += word1[l2:] + word2[l1:]
+        # return sol3
         
         # sol2 = []
         # for c1, c2 in zip(word1, word2):
@@ -16,14 +16,14 @@ class Solution:
         # sol2.append(word2[l1:])
         # return "".join(sol2)
 
-        # sol = ""
-        # if l1 <= l2:
-        #     for c1, c2 in zip(word1, word2[:l1]):
-        #         sol += c1 + c2
-        #     sol += word2[l1:]
-        # else:
-        #     for c1, c2 in zip(word1[:l2], word2):
-        #         sol += c1 + c2
-        #     sol += word1[l2:]
-        # return sol
+        sol = ""
+        if l1 <= l2:
+            for c1, c2 in zip(word1, word2[:l1]):
+                sol += c1 + c2
+            sol += word2[l1:]
+        else:
+            for c1, c2 in zip(word1[:l2], word2):
+                sol += c1 + c2
+            sol += word1[l2:]
+        return sol
         
