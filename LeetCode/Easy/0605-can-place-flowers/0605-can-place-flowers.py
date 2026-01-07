@@ -24,5 +24,5 @@ class Solution:
         # if l == 1 and flowerbed[0] == 0:
         #     flowerbed[0] = 1
         #     possible_plants += 1
-        return possible_plants >= n
+        # return possible_plants >= n
         
