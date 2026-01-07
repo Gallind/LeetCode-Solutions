@@ -21,8 +21,7 @@ class Solution:
                 l2 = l2.next
             else: local_sum = c
             c = local_sum // 10
-            local_node = ListNode(val=local_sum%10)
-            dummy.next = local_node
+            dummy.next = ListNode(val=local_sum%10)
             dummy = dummy.next
         return sol.next
         
