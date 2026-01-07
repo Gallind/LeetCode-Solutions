@@ -1,7 +1,7 @@
-import math
+from functools import cache
 class Solution:
     def countBits(self, n: int) -> List[int]:
-        
+        @cache
         def bits(x: int):
             if x == 0: return 0
             return bits(x >> 1) + (x & 1)
