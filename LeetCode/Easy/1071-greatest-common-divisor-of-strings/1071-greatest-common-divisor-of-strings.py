@@ -5,10 +5,6 @@ class Solution:
         return self.isDiv(s[len(sub):], sub)
         
     def gcdOfStrings(self, str1: str, str2: str) -> str:
-        if not str1 or not str2:
-            return ""
-        if str1.find(str2[0]) < 0 or str2.find(str1[0]) < 0:
-            return ""
         max_div = ""
         prefix = ""
         for ch in str1:
