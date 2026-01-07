@@ -7,16 +7,16 @@ class Solution:
     def addTwoNumbers(self, l1: Optional[ListNode], l2: Optional[ListNode]) -> Optional[ListNode]:
         dummy = ListNode()
         sol = dummy
-        c = 0
-        while (l1 != None) or (l2 != None) or c > 0:
-            if l1 != None and l2 != None:
+        local_sum = c = 0
+        while l1 or l2 or c:
+            if l1 and l2:
                 local_sum = l1.val + l2.val + c
                 l1 = l1.next
                 l2 = l2.next
-            elif l1 != None:
+            elif l1:
                 local_sum = l1.val + c
                 l1 = l1.next
-            elif l2 != None:
+            elif l2:
                 local_sum = l2.val + c
                 l2 = l2.next
             else: local_sum = c
