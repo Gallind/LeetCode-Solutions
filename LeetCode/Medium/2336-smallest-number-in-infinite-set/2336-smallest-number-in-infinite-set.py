@@ -2,7 +2,7 @@ class SmallestInfiniteSet:
     SMALL = 1
     MIN = 1
     def infGen(self):
-        x = 1
+        x = self.MIN
         while True:
             while x not in self.ADDED_BACK and x < self.SMALL:
                 x += 1
