@@ -4,10 +4,16 @@ class Solution:
         inter = sorted(intervals, key=lambda x: x[1])
         print(inter)
         bCheck = inter[0][1]
-        inter = inter[1:]
         countIn = 1
-        for a, b in inter:
+        for i in range(1, len(inter)):
+            a, b = inter[i]
             if a >= bCheck:
                 bCheck = b
                 countIn += 1
+        # inter = inter[1:]
+        # countIn = 1
+        # for a, b in inter:
+        #     if a >= bCheck:
+        #         bCheck = b
+        #         countIn += 1
         return len(intervals) - countIn
