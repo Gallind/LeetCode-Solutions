@@ -3,7 +3,6 @@ class Solution:
         boolA = []
         boolB = []
         boolC = []
-        a1, b1, c1 = a, b, c
         while a > 0:
             boolA.append(a & 1 == 1)
             a >>= 1
@@ -13,7 +12,6 @@ class Solution:
         while c > 0:
             boolC.append(c & 1 == 1)
             c >>= 1
-        a, b, c = a1, b1, c1
         max_len = max(len(boolA), len(boolB), len(boolC))
         boolA.extend([False] * (max_len - len(boolA)))
         boolB.extend([False] * (max_len - len(boolB)))
@@ -21,7 +19,6 @@ class Solution:
         boolA = boolA[::-1]
         boolB = boolB[::-1]
         boolC = boolC[::-1]
-        print(f"a - {a} = {boolA}\nb - {b} = {boolB}\nc - {c} = {boolC}")
         counter = 0
         for i, bit in enumerate(boolC):
             if not bit:
