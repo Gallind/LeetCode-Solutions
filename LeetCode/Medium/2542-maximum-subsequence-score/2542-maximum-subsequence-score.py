@@ -7,8 +7,8 @@ class Solution:
         nums1 = [b for (a, b) in pairs_s]
         nums2 = [a for (a, b) in pairs_s]
 
-        # l = len(nums1)
-        # if k >= l: return sum(nums1) * nums2[0]
+        l = len(nums1)
+        if k >= l: return sum(nums1) * nums2[l - 1]
         
         prefix_sum = 0
         for a, b in zip(nums1, nums2):
