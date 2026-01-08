@@ -5,7 +5,7 @@ class Solution:
         amount_diag = n * 2 - 1
         diagonals = []
         upper_diagonals = []
- 
+
         for i in range(n - 1):
             diag = []
             for row in range(n):
