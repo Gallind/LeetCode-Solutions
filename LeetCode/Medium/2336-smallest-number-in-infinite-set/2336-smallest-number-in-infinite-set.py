@@ -18,16 +18,13 @@ class SmallestInfiniteSet:
         if self.ADDED_BACK:
             minimum = min(self.ADDED_BACK)
             self.ADDED_BACK.discard(minimum)
-            # return minimum
         else:
             self.SMALL += 1
-            # return self.SMALL - 1
         self.MIN = min(minimum + 1, self.SMALL)
         return self.MIN - 1
 
 
     def addBack(self, num: int) -> None:
-        # self.MIN = min(self.MIN, num)
         if num < self.SMALL:
             self.ADDED_BACK.add(num)
         
