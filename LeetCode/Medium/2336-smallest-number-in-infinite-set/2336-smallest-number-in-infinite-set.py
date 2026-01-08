@@ -1,10 +1,8 @@
 class SmallestInfiniteSet:
     SMALL = 1
-    # ADDED_BACK = set()
-    # MIN = 1
+    MIN = 1
     def infGen(self):
         x = 1
-        # x = self.MIN
         while True:
             while x not in self.ADDED_BACK and x < self.SMALL:
                 x += 1
@@ -16,26 +14,16 @@ class SmallestInfiniteSet:
         
 
     def popSmallest(self) -> int:
+        minimum = self.SMALL + 10
         if self.ADDED_BACK:
             minimum = min(self.ADDED_BACK)
             self.ADDED_BACK.discard(minimum)
-            return minimum
+            # return minimum
         else:
             self.SMALL += 1
-            return self.SMALL - 1
-        # if self.MIN == self.SMALL:
-        #     if self.ADDED_BACK:
-        #         self.MIN = min(self.ADDED_BACK)
-        #     else:
-        #         self.MIN += 1
-        # self.ADDED_BACK.discard(self.MIN)
-        # if self.ADDED_BACK:
-        #     self.MIN = min(min(self.ADDED_BACK), self.SMALL + 1)
-        # else:
-        #     self.MIN = self.SMALL + 1
-        #     self.SMALL += 1
-        
-        # return self.MIN - 1
+            # return self.SMALL - 1
+        self.MIN = min(minimum + 1, self.SMALL)
+        return self.MIN - 1
 
 
     def addBack(self, num: int) -> None:
