@@ -2,7 +2,7 @@ class Solution:
     def combine(self, n: int, k: int) -> List[List[int]]:
         sol = []
         def combRec(start: int, state):
-            print(f"start - {start}\nstate - {state}")
+            # print(f"start - {start}\nstate - {state}")
             if len(state) == k:
                 sol.append(list(state))
                 return
