@@ -3,7 +3,7 @@ class Solution:
         while right > left:
             right &= right - 1
         return right
-        
+
         # if right >= left << 1: return 0
         # total = 0
         # for i in range(32):
