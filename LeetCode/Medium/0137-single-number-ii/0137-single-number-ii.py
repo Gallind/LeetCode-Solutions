@@ -10,9 +10,9 @@ class Solution:
                 bit_sum += (num >> i) & 1
                 # if (num >> i) & 1:
                 #     bit_sum += 1
-            # res |= (bit_sum % 3) << i
-            if bit_sum % 3:
-                res |= 1 << i
+            res |= (bit_sum % 3) << i
+            # if bit_sum % 3:
+            #     res |= 1 << i
         if res >= 1 << 31:
             res -= 1 << 32
         return res
