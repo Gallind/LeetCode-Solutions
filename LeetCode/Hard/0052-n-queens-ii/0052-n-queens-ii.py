@@ -8,7 +8,6 @@ class Solution:
                 if abs(self.table[c] - row) == abs(col - c): return False
             return True
 
-
         def solve(col):
             if col == n: 
                 self.count += 1
