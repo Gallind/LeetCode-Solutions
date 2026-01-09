@@ -22,7 +22,6 @@ public class Solution {
             lenB++;
             b = b.next;
         }
-        // System.out.println("a - " + lenA + "\nb - " + lenB);
         int diff = Math.abs(lenA - lenB);
         a = headA; 
         b = headB;
