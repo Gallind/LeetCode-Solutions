@@ -7,7 +7,7 @@
 class Solution:
     def averageOfLevels(self, root: Optional[TreeNode]) -> List[float]:
         self.totals = []
-        def sumLevel(root, h=0):
+        def sumLevel(root=root, h=0):
             if not root: return
             if len(self.totals) == h:
                 self.totals.append([root.val,1])
@@ -17,10 +17,8 @@ class Solution:
             h += 1
             sumLevel(root.left, h)
             sumLevel(root.right, h)
-        sumLevel(root)
-        res = []
-        for total, count in self.totals:
-            res.append(total / count)
+        sumLevel()
+        res = [total / count for total, count in self.totals]
         return res
 
         
