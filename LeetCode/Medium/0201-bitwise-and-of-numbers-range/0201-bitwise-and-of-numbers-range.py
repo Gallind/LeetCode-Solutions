@@ -1,0 +1,21 @@
+class Solution:
+    def rangeBitwiseAnd(self, left: int, right: int) -> int:
+        shift = 0
+        # Find the common prefix by shifting away the different bits
+        while left < right:
+            left >>= 1
+            right >>= 1
+            shift += 1
+            
+        # Shift back to restore the magnitude of the prefix
+        return left << shift
+        
+        # if right >= left << 1: return 0
+        # total = 0
+        # for i in range(32):
+        #     bit = 1
+        #     for num in range(left, right + 1):
+        #         bit &= (num >> i) & 1
+        #         if not bit: break
+        #     total |= bit << i
+        # return total
