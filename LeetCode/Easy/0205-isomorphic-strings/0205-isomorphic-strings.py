@@ -12,7 +12,4 @@ class Solution:
                 dict_t[ch2] = {i,}
             else:
                 dict_t[ch2].add(i)
-        print(f"{dict_s = }\n{dict_t = }")
-        print(f"\n\n{list(dict_s.values()) = }\n{list(dict_t.values()) = }")
         return all(s1 == s2 for s1, s2 in zip(list(dict_s.values()), list(dict_t.values())))
-        # return dict_s.values() == dict_t.values()
