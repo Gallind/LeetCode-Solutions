@@ -1,7 +1,7 @@
 class Solution:
     def isHappy(self, n: int) -> bool:
         if n == 1: return True
-        if n <= 4 or n == 9: return False
+        if n <= 4: return False
         sum_digits = 0
         temp = n
         while temp > 0:
