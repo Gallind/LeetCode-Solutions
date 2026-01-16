@@ -7,5 +7,4 @@ class Solution:
         while temp > 0:
             sum_digits += (temp % 10) ** 2
             temp //= 10
-        print(sum_digits)
         return self.isHappy(sum_digits)
