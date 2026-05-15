@@ -16,6 +16,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0217-contains-duplicate](https://github.com/Gallind/LeetCode-Solutions/tree/master/0217-contains-duplicate) |
 | [0228-summary-ranges](https://github.com/Gallind/LeetCode-Solutions/tree/main/LeetCode/Easy/0228-summary-ranges/) | Easy |
 | [0268-missing-number](https://github.com/Gallind/LeetCode-Solutions/tree/master/0268-missing-number) |
+| [0303-range-sum-query-immutable](https://github.com/Gallind/LeetCode-Solutions/tree/main/LeetCode/Easy/0303-range-sum-query-immutable/) | Easy |
 | [0349-intersection-of-two-arrays](https://github.com/Gallind/LeetCode-Solutions/tree/master/0349-intersection-of-two-arrays) |
 | [0350-intersection-of-two-arrays-ii](https://github.com/Gallind/LeetCode-Solutions/tree/master/0350-intersection-of-two-arrays-ii) |
 | [0414-third-maximum-number](https://github.com/Gallind/LeetCode-Solutions/tree/master/0414-third-maximum-number) |
@@ -180,4 +181,12 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0108-convert-sorted-array-to-binary-search-tree](https://github.com/Gallind/LeetCode-Solutions/tree/master/0108-convert-sorted-array-to-binary-search-tree) |
+## Design
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0303-range-sum-query-immutable](https://github.com/Gallind/LeetCode-Solutions/tree/main/LeetCode/Easy/0303-range-sum-query-immutable/) | Easy |
+## Prefix Sum
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0303-range-sum-query-immutable](https://github.com/Gallind/LeetCode-Solutions/tree/main/LeetCode/Easy/0303-range-sum-query-immutable/) | Easy |
 <!---LeetCode Topics End-->
